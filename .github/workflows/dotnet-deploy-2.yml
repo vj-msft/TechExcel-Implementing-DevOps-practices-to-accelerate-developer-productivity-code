@@ -1,4 +1,4 @@
-name: .NET CI
+name: .net deployment
 
 env:
   registryName: qy6mz3drfauosmpnpreg.azurecr.io
