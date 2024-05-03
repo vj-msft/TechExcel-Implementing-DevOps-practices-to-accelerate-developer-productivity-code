@@ -68,7 +68,7 @@ jobs:
     needs: dockerBuildPush
     environment:
       name: dev
-      url: https://qy6mz3drfauos-dev-dev.azurewebsites.net/
+      url: https://qy6mz3drfauos-dev.azurewebsites.net/
 
     steps:
       - name: 'Login via Azure CLI'
@@ -78,7 +78,7 @@ jobs:
 
       - uses: azure/webapps-deploy@v2
         with:
-          app-name: 'qy6mz3drfauos-dev-dev'
+          app-name: 'qy6mz3drfauos-dev'
           images: qy6mz3drfauosmpnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-test:
